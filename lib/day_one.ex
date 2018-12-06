@@ -6,7 +6,7 @@ defmodule DayOne do
   def part_two(input) do
     input
     |> Stream.cycle
-    |> Enum.reduce_while({0, MapSet.new([0])}, fn n, { current, seen } ->
+    |> Enum.reduce_while({0, MapSet.new([0])}, fn n, {current, seen} ->
       frequency = current + n
       
       if MapSet.member?(seen, frequency) do

@@ -14,4 +14,18 @@ defmodule DayTwoTest do
 
     assert DayTwo.part_one(input) == 12
   end
+
+  test "part two" do
+    input = [
+      "abcde",
+      "fghij",
+      "klmno",
+      "pqrst",
+      "fguij",
+      "axcye",
+      "wvxyz",
+    ]
+
+    assert DayTwo.part_two(input) == "fgij"
+  end
 end
